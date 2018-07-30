@@ -6,10 +6,6 @@
   "scripts": {
     "test": "mocha"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AliMeer/Crowdfunding-React.git"
-  },
   "keywords": [
     "Ethereum",
     "Solidity",
