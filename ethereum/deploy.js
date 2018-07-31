@@ -20,10 +20,10 @@ const deploy = async () =>    {
     //
     console.log("\nAttempting to deploy with: \n" + accounts[0]);
     
-    const result = await new web3.eth.Contract(JSON.parse(interface))
-        .deploy({data: '0x' + bytecode})
+    const result = await new web3.eth.Contract(JSON.parse(compiledFactory.interface))
+        .deploy({data: '0x' + compiledFactory.bytecode})
         .send({gas: '1000000', from: accounts[0]});
-    console.log("\nInterface is \n" + interface);
+    
     console.log("\nContract deployed to: \n" + result.options.address);
 
 };
