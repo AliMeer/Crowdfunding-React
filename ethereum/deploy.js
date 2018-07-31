@@ -1,6 +1,10 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
-const {interface, bytecode} = require('./compile');
+const path = require('path');
+const fs = require('fs-extra');
+const compiledFactory = require('./build/CampaignFactory.json');
+
+//const {interface, bytecode} = require('./compile');
 
 const provider = new HDWalletProvider(
     'pull vintage tag universe cancel oval inner program mule praise strike tooth',
